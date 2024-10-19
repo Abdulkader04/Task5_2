@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/img/exchange-rate.png" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="converter">
+      <label for="numb" class="title">Enter Value:</label>
+      <input
+        id="numb"
+        type="number"
+        name="numb"
+        class="units"
+        data-number
+        placeholder="Enter value"
+        required
+      />
+      <label for="from-units" class="title">From:</label>
+      <select id="from-units" name="from-units" class="units" data-from>
+        <option value="km">Kilometers</option>
+        <option value="m">Meters</option>
+        <option value="cm">Centimeter</option>
+      </select>
+      <label for="to-units" class="title">To:</label>
+      <select id="to-units" name="to-units" class="units" data-to>
+        <option value="km">Kilometers</option>
+        <option value="m">Meters</option>
+        <option value="cm">Centimeter</option>
+      </select>
+      <button class="conv-btn" data-conv>Convert</button>
+      <div class="result" data-result>The Resulte is:</div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
